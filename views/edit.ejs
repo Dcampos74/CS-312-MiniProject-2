@@ -1,0 +1,10 @@
+<h1>Edit Post</h1>
+<form method="POST" action="/edit/<%= index %>">
+  <input type="text" name="title" value="<%= post.title %>" required>
+  <br>
+
+  <textarea name="content" required><%= post.content %></textarea>
+  <br>
+
+  <button type="submit">Save Edit</button>
+</form>
